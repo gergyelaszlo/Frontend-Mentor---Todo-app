@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Workbench for todo app</title>
+</head>
+<body>
+
+    <div class="outside-todo-container">
+        <div class="title-app">
+            <div class="title">
+                <h1>TODO</h1>
+            </div>
+            <div class="title-image">
+                <img class="theme-icon" src="images/icon-sun.svg" alt="">
+            </div>
+        </div>
+    <div class="todo-main-container">
+        <div class="create-new-item item-todo">
+            <div class="todo-circle"></div>
+            <label for="todo-item-create"></label>
+            <input type="text" class="todo-input-field" id="todo-item-create" placeholder="Create a new todo...">
+        </div>
+        <div class="item-todo">
+            <div class="all-items-list"></div>
+            <div class="activities">
+                <div class="activities-item">
+                    <div class="count-items">
+                    <span class="total"></span>
+                    <span>items left</span>
+                    </div>
+                </div>
+                <div class="activities-middle activities-item filter">
+                    <span id="all" class="active">All</span>
+                    <span id="active">Active</span>
+                    <span id="completed">Completed</span>
+                </div>
+                <div class="activities-item">
+                    <span class="activities-item deleteComp">Clear All</span>
+                </div>
+            </div>
+        </div>
+        <div class="drag-para">
+            <p>Drag and drop to reorder list</p>
+        </div>
+    </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
